@@ -110,6 +110,7 @@ const legitimateEmails = {
 };
 
 let current_emails = $state([]);
+let checked = $state([]);
 let randomLegit, randomNonLegit;
 for(var i = 1; i <= 5; i++){
   randomLegit = legitimateEmails['emails'][Math.floor(Math.random() * $state.snapshot(legitimateEmails['emails']).length)];
@@ -142,9 +143,13 @@ function showMail(from, sub){
 function clearAll(){
   current_mail_from = "";
 }
-
-function check(){
-
+function check(from, sub){
+  for(var i = 0; i < phishingEmails['emails'].length; i++){
+    if(from == phishingEmails['emails'][i]["from"] && sub == phishingEmails['emails'][i]["subject"]){
+    }
+    else if(from == legitimateEmails['emails'][i]["from"] && sub == legitimateEmails['emails'][i]["subject"]){
+    }
+  }
 }
 </script>
 <style>
@@ -241,7 +246,7 @@ function check(){
         {mail["subject"]}
       </div>
       <div>
-        <input type="checkbox" id="isPhish{mail['subject']}"> Is it a phishing mail?
+        <input on:click={()=>{}} type="checkbox" id="isPhish{mail['subject']}"> Is it a phishing mail?
       </div>
       <button class="button2" on:click={()=>{showMail(mail['from'], mail['subject'])}}>
         Open!
