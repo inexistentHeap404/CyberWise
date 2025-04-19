@@ -1,15 +1,9 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-vercel';
 
 const config = {
   kit: {
-    adapter: adapter(
-      {
-        strict: false
-      }      
-    ),
-    prerender: {
-      entries: ['*'] // exclude dynamic routes here
-    }
+    adapter: adapter()
+    // no need for prerender.entries or strict here
   }
 };
 
