@@ -1,2 +1,0 @@
-console.log("This program determines if a student has passed the semester based on the CAT-1 marks. Enter the number of students, marks of subjects of each student and the passing mark.");
-var number_of_students = prompt("Enter the number of students.");
