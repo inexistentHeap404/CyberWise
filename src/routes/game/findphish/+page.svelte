@@ -64,7 +64,7 @@
   <div class="parent">
     <div class="subh">Find the Phishing Mail</div>
     <div class="subi">{displayedText}</div>
-    <a href="/game/findphish/src_phish">
+    <a href="/CyberWise/game/findphish/src_phish">
       <button id="b">Play!</button>
     </a>
   </div>

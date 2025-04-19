@@ -85,21 +85,21 @@
     <div class="parentnav">
         <div class="navbar">
             <ul>
-                <a href="/">
+                <a href="/CyberWise">
                     <li>
                         Home
                     </li>
                 </a>
-                <a href="/about">
+                <a href="/CyberWise/about">
                     <li>About</li>
                 </a>
-                <a href="/learn">
+                <a href="/CyberWise/learn">
                     <li>Learn</li>
                 </a>
-                <a href="/game">
+                <a href="/CyberWise/game">
                     <li>Minigames</li>
                 </a>
-                <a href="/login">
+                <a href="/CyberWise/login">
                     <li>Login</li>
                 </a>
                 
