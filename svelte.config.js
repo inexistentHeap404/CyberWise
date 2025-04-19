@@ -1,8 +1,13 @@
 import adapter from '@sveltejs/adapter-static';
-export default {
+
+const config = {
   kit: {
     adapter: adapter(),
-    paths: { base: '/CyberWise' }
+    prerender: {
+      entries: ['*'] // exclude dynamic routes here
+    }
   }
 };
+
+export default config;
 
