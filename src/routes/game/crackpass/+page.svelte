@@ -68,7 +68,7 @@
 <div class="parent">
   <div class="subh">Crack the Password</div>
   <div class="subi">{displayedText}</div>
-  <a href="/CyberWise/game/crackpass/src_crack_pass">
+  <a href=" /game/crackpass/src_crack_pass">
   <button id="b">Play!</button>
   </a>
 </div>

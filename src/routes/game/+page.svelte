@@ -50,9 +50,9 @@
         Play mini games and learn about internet safety
     </div>
     <div class="subcat">
-        <a href="/CyberWise/game/crackpass">Crack the code</a>
+        <a href=" /game/crackpass">Crack the code</a>
     </div>
     <div class="subcat">
-        <a href="/CyberWise/game/findphish">Find the phishing mail</a>
+        <a href=" /game/findphish">Find the phishing mail</a>
     </div>
 </div>
