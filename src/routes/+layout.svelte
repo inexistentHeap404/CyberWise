@@ -115,7 +115,7 @@
 <script>
 	let { children } = $props();
 	export const prerender = true;
-
+    
 	import Particles, { particlesInit } from '@tsparticles/svelte';
 	import { loadSlim } from '@tsparticles/slim';
 
@@ -136,6 +136,8 @@
 	void particlesInit(async (engine) => {
 		await loadSlim(engine);
 	});
+
+
 </script>
 
 <style>
