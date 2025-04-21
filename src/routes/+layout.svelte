@@ -110,14 +110,14 @@
 
 {@render children()}
 -->
-
-
 <script>
-	let { children } = $props();
 	export const prerender = true;
-    
-	import Particles, { particlesInit } from '@tsparticles/svelte';
+
+	import { onMount } from 'svelte';
 	import { loadSlim } from '@tsparticles/slim';
+
+	let Particles = null;
+	let showParticles = false;
 
 	let particlesConfig = {
 		particles: {
@@ -133,13 +133,17 @@
 		const particlesContainer = event.detail.particles;
 	};
 
-	void particlesInit(async (engine) => {
-		await loadSlim(engine);
+	onMount(async () => {
+		const mod = await import('@tsparticles/svelte');
+		Particles = mod.default;
+		showParticles = true;
+		await mod.particlesInit(async (engine) => {
+			await loadSlim(engine);
+		});
 	});
-
-
 </script>
 
+<!-- your styles untouched -->
 <style>
 	* {
 		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -212,12 +216,15 @@
 </style>
 
 <div class="body">
-	<Particles
-		id="tsparticles"
-		style="position: fixed; width: 100vw; height: 100vh; z-index: 0;"
-		options="{particlesConfig}"
-		on:particlesLoaded="{onParticlesLoaded}"
-	/>
+	{#if showParticles && Particles}
+		<svelte:component
+			this={Particles}
+			id="tsparticles"
+			style="position: fixed; width: 100vw; height: 100vh; z-index: 0;"
+			options={particlesConfig}
+			on:particlesLoaded={onParticlesLoaded}
+		/>
+	{/if}
 
 	<div class="parenttop">
 		<div class="topbar">
@@ -243,4 +250,4 @@
 	</svg>
 </div>
 
-{@render children()}
+<slot />
