@@ -1689,7 +1689,7 @@
     "@vercel/nft" "^0.29.2"
     esbuild "^0.24.0"
 
-"@sveltejs/kit@^2.16.0":
+"@sveltejs/kit@^2.20.7":
   version "2.20.7"
   resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-2.20.7.tgz#c6fd581403fe55a6a2deefd027e0547c98e780b4"
   integrity sha512-dVbLMubpJJSLI4OYB+yWYNHGAhgc2bVevWuBjDj8jFUXIJOAnLwYP3vsmtcgoxNGUXoq0rHS5f7MFCsryb6nzg==
@@ -9159,7 +9159,7 @@ vercel@^41.3.0:
     chokidar "4.0.0"
     jose "5.9.6"
 
-vite@^6.0.0:
+vite@^6.3.2:
   version "6.3.2"
   resolved "https://registry.yarnpkg.com/vite/-/vite-6.3.2.tgz#4c1bb01b1cea853686a191657bbc14272a038f0a"
   integrity sha512-ZSvGOXKGceizRQIZSz7TGJ0pS3QLlVY/9hwxVh17W3re67je1RKYzFHivZ/t0tubU78Vkyb9WnHPENSBCzbckg==
