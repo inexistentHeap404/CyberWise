@@ -19,7 +19,6 @@
 	},
 	"dependencies": {
 		"@sveltejs/adapter-static": "^3.0.8",
-		"@tsparticles/slim": "^3.8.1",
 		"@tsparticles/svelte": "^3.1.1",
 		"express": "^4.21.2",
 		"netlify-cli": "^19.0.0",
@@ -28,4 +27,7 @@
 		"tsparticles-slim": "^2.12.0",
 		"vercel": "^41.3.0"
 	}
+  "engines":{
+    "node":"22.14.0"
+  }
 }
