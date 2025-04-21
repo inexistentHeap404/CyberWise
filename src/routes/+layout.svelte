@@ -100,10 +100,6 @@
                 <a href=" /game">
                     <li>Minigames</li>
                 </a>
-                <a href=" /login">
-                    <li>Login</li>
-                </a>
-                
             </ul>
         </div>
     </div>
